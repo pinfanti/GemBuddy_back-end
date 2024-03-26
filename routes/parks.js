@@ -5,5 +5,9 @@ router
   .route("/")
   .get(parksController.index)
 
+router
+  .route("/:id")
+  .get(parksController.findOne);
+
 
 module.exports = router;
