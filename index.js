@@ -4,7 +4,7 @@ const app = express();
 const cors = require("cors");
 const parksRoutes = require("./routes/parks");
 const activitiesRoutes = require("./routes/activities");
-const meetingsRoutes = require("./routes/mettings");
+const meetingsRoutes = require("./routes/meetings");
 
 
 app.use((req, _res, next) => {
