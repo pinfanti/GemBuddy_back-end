@@ -12,8 +12,7 @@ const findActivities = async (req, res) => {
       });
     }
 
-    // Assuming you want to return all activities related to the park, not just the first one
-    res.json(activitiesFound);
+ res.json(activitiesFound);
   } catch (error) {
     console.error(error); // Log the error for debugging
     res.status(500).json({
