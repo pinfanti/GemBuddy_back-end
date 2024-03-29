@@ -12,5 +12,11 @@ router
   .put(meetingsController.update)
   .delete(meetingsController.remove);
 
+  router
+  .route("/")
+  .get(meetingsController.findAllMeetings)
+  
+
+
 
 module.exports = router;

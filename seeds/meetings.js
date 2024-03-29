@@ -78,7 +78,55 @@ exports.seed = async function(knex) {
                 "description_gem": "Most beatiful lake around",
                 "description_meeting": "Meeting with John Doe to make a hike and discover an hiden waterfall.",
                 "activity_id": 1
-            }
+            },
+            {
+                "id": 7,
+                "user_id": 2,
+                "place": "Bald Eagle Viewing",
+                "date": "2024-04-19T06:00:00.000Z",
+                "hour": "10:00:00",
+                "receive_payment": 1,
+                "value": "20.00",
+                "description_gem": "Bald Eagle View",
+                "description_meeting": "Meeting to spot the birds in nature. How awesome",
+                "activity_id": 2
+            }, 
+            {
+                "id": 8,
+                "user_id": 3,
+                "place": "Black Bear Viewing",
+                "date": "2024-04-19T06:00:00.000Z",
+                "hour": "10:00:00",
+                "receive_payment": 0,
+                "value": null,
+                "description_gem": "Black Bear View",
+                "description_meeting": "Meeting to spot the black bears in nature. How awesome, just dont forget the bear spray",
+                "activity_id": 2
+            },
+            {
+                "id": 9,
+                "user_id": 4,
+                "place": "Patricia lAke ",
+                "date": "2024-05-19T06:00:00.000Z",
+                "hour": "10:00:00",
+                "receive_payment": 1,
+                "value": "20.00",
+                "description_gem": "Patricia Lake is a serene mountain lake located just outside the town of Jasper. It offers opportunities for canoeing, kayaking, and picnicking amidst stunning alpine scenery.",
+                "description_meeting": "Group of 10 people to admire the lake ",
+                "activity_id": 3
+            }, 
+            {
+                "id": 10,
+                "user_id": 5,
+                "place": "Pyramid Lake gather together",
+                "date": "2024-06-19T06:00:00.000Z",
+                "hour": "10:00:00",
+                "receive_payment": 0,
+                "value": null,
+                "description_gem": "Situated at the foot of Pyramid Mountain, this picturesque lake offers beautiful views and recreational activities like fishing, kayaking, and hiking around its shores.",
+                "description_meeting": "Gather togheter and enjoy a day in the lake.",
+                "activity_id": 3
+            },
         ]        
       
     ]);
