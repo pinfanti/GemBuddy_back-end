@@ -5,6 +5,7 @@ const cors = require("cors");
 const parksRoutes = require("./routes/parks");
 const activitiesRoutes = require("./routes/activities");
 const meetingsRoutes = require("./routes/meetings");
+const usersRoutes = require("./routes/users");
 
 
 app.use((req, _res, next) => {
@@ -19,6 +20,7 @@ app.use(express.json());
 app.use("/api/parks", parksRoutes)
 app.use("/api/activities", activitiesRoutes)
 app.use("/api/meetings", meetingsRoutes)
+app.use("/api/users", usersRoutes)
 app.use(express.static("public"));
 
 app.listen(PORT, () => {

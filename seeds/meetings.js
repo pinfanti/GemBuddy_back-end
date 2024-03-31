@@ -27,7 +27,7 @@ exports.seed = async function(knex) {
                 "hour": "14:30:00",
                 "receive_payment": 0,
                 "value": null,
-                "description_gem": null,
+                "description_gem": "Let's work as a group to improve Maligne Lake trail",
                 "description_meeting": "Casual meetup with Jane Smith to discuss project ideas at Maligne Canyon Trail in Jasper.",
                 "activity_id": 1
             },

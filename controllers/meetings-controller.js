@@ -1,26 +1,5 @@
 const knex = require("knex")(require("../knexfile"));
 
-const findAllMeetings = async (req, res) => {
-  try {
-    // Query activities based on the park_id column
-    const meetingsFound = await knex("meetings")
-    
-    if (meetingsFound.length === 0) {
-      return res.status(404).json({
-        message: `Meetings with activity ID ${req.params.id} not found` 
-      });
-    }
-
- res.json(meetingsFound);
-  } catch (error) {
-    console.error(error); // Log the error for debugging
-    res.status(500).json({
-      message: `Unable to retrieve meetings with activity ID ${req.params.id}`,
-    });
-  }
-}; 
-
-
 const findMeetings = async (req, res) => {
     try {
       // Query activities based on the park_id column
@@ -151,5 +130,4 @@ module.exports = {
     update, 
     remove, 
     findOne,
-    findAllMeetings
 };
