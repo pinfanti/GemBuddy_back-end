@@ -5,7 +5,7 @@ const findMeetings = async (req, res) => {
       // Query activities based on the park_id column
       const meetingsFound = await knex("meetings")
       .join('users', 'meetings.user_id','users.id')
-      .select('meetings.*', 'users.first_name', 'users.last_name', 'users.image', 'users.username' )   
+      .select('meetings.*', 'users.first_name', 'users.last_name', 'users.image' )   
       .where({ activity_id: req.params.id });
   
       if (meetingsFound.length === 0) {
@@ -27,7 +27,7 @@ const findMeetings = async (req, res) => {
     try {
       const MeetingFound = await knex("meetings")
       .join('users', 'meetings.user_id','users.id')
-      .select('meetings.*', 'users.first_name', 'users.last_name', 'users.image', 'users.username' )   
+      .select('meetings.*', 'users.first_name', 'users.last_name', 'users.image', 'users.email','users.description' )   
       .where({"meetings.id": req.params.id });
   
       if (MeetingFound.length === 0) {
